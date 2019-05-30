@@ -1,0 +1,45 @@
+2019-05-30 18:21:50 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 1:1
+2019-05-30 18:21:50 pool-1-thread-2 DEBUG Matrix:47 - pool-1-thread-2 fill cell 4:4
+2019-05-30 18:21:50 pool-1-thread-2 DEBUG Matrix:47 - pool-1-thread-2 fill cell 5:5
+2019-05-30 18:21:50 pool-1-thread-5 DEBUG Matrix:47 - pool-1-thread-5 fill cell 7:7
+2019-05-30 18:21:50 pool-1-thread-1 DEBUG Matrix:47 - pool-1-thread-1 fill cell 6:6
+2019-05-30 18:21:50 pool-1-thread-4 DEBUG Matrix:47 - pool-1-thread-4 fill cell 8:8
+2019-05-30 18:21:50 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 9:9
+2019-05-30 18:21:50 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 10:10
+2019-05-30 18:21:50 pool-1-thread-3 DEBUG Matrix:53 - pool-1-thread-3 terminate phaser.
+2019-05-30 18:21:50 pool-1-thread-3 DEBUG MatrixThread:23 - Thread#3 finished work.
+2019-05-30 18:21:50 pool-1-thread-1 DEBUG MatrixThread:23 - Thread#1 finished work.
+2019-05-30 18:21:50 pool-1-thread-4 DEBUG MatrixThread:23 - Thread#4 finished work.
+2019-05-30 18:21:50 pool-1-thread-2 DEBUG MatrixThread:23 - Thread#2 finished work.
+2019-05-30 18:21:50 pool-1-thread-5 DEBUG MatrixThread:23 - Thread#5 finished work.
+2019-05-30 18:21:50 main            DEBUG Matrix:35 - main recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-5 DEBUG MatrixThread:18 - Thread#5 is starting.
+2019-05-30 18:22:05 pool-1-thread-2 DEBUG MatrixThread:18 - Thread#2 is starting.
+2019-05-30 18:22:05 pool-1-thread-4 DEBUG MatrixThread:18 - Thread#4 is starting.
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG MatrixThread:18 - Thread#3 is starting.
+2019-05-30 18:22:05 pool-1-thread-1 DEBUG MatrixThread:18 - Thread#1 is starting.
+2019-05-30 18:22:05 pool-1-thread-5 INFO  Matrix:22 - Matrix created. Size: 11. Phaser counter: 5
+2019-05-30 18:22:05 pool-1-thread-5 INFO  Matrix:30 - Matrix instance created upon pool-1-thread-5 request.
+2019-05-30 18:22:05 pool-1-thread-5 DEBUG Matrix:35 - pool-1-thread-5 recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-1 DEBUG Matrix:35 - pool-1-thread-1 recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-4 DEBUG Matrix:35 - pool-1-thread-4 recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-2 DEBUG Matrix:35 - pool-1-thread-2 recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG Matrix:35 - pool-1-thread-3 recieved matrix instance.
+2019-05-30 18:22:05 pool-1-thread-5 DEBUG Matrix:47 - pool-1-thread-5 fill cell 0:0
+2019-05-30 18:22:05 pool-1-thread-1 DEBUG Matrix:47 - pool-1-thread-1 fill cell 1:1
+2019-05-30 18:22:05 pool-1-thread-4 DEBUG Matrix:47 - pool-1-thread-4 fill cell 2:2
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 4:4
+2019-05-30 18:22:05 pool-1-thread-2 DEBUG Matrix:47 - pool-1-thread-2 fill cell 3:3
+2019-05-30 18:22:05 pool-1-thread-2 DEBUG Matrix:47 - pool-1-thread-2 fill cell 5:5
+2019-05-30 18:22:05 pool-1-thread-1 DEBUG Matrix:47 - pool-1-thread-1 fill cell 6:6
+2019-05-30 18:22:05 pool-1-thread-5 DEBUG Matrix:47 - pool-1-thread-5 fill cell 7:7
+2019-05-30 18:22:05 pool-1-thread-4 DEBUG Matrix:47 - pool-1-thread-4 fill cell 8:8
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 9:9
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG Matrix:47 - pool-1-thread-3 fill cell 10:10
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG Matrix:53 - pool-1-thread-3 terminate phaser.
+2019-05-30 18:22:05 pool-1-thread-3 DEBUG MatrixThread:23 - Thread#3 finished work.
+2019-05-30 18:22:05 pool-1-thread-4 DEBUG MatrixThread:23 - Thread#4 finished work.
+2019-05-30 18:22:05 pool-1-thread-1 DEBUG MatrixThread:23 - Thread#1 finished work.
+2019-05-30 18:22:05 pool-1-thread-5 DEBUG MatrixThread:23 - Thread#5 finished work.
+2019-05-30 18:22:05 pool-1-thread-2 DEBUG MatrixThread:23 - Thread#2 finished work.
+2019-05-30 18:22:05 main            DEBUG Matrix:35 - main recieved matrix instance.

@@ -1,39 +1,25 @@
 package by.anelkin.multithreading.thread;
 
 import by.anelkin.multithreading.matrix.Matrix;
-
-import java.util.concurrent.*;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import org.apache.log4j.Logger;
 
 public class MatrixThread extends Thread {
+    private static final Logger logger = Logger.getLogger(MatrixThread.class);
     private int value;
     private String name;
-    private static int index;
-    private Lock lock = new ReentrantLock();
-    private CyclicBarrier barrier;
 
-    public MatrixThread(int value, CyclicBarrier barrier) {
+    public MatrixThread(int value) {
         this.name = "Thread#" + value;
         this.value = value;
-        this.barrier = barrier;
     }
 
     @Override
     public void run() {
+        logger.debug(name + " is starting.");
         Matrix matrix = Matrix.getInstance();
-        while (index < Matrix.getMatrixSize()) {
-            lock.lock();
-            matrix.fillDiagonalCell(index++, value);
-            try {
-                barrier.await(100, TimeUnit.MILLISECONDS);
-            } catch (InterruptedException | BrokenBarrierException | TimeoutException e) {
-                //log
-            } finally {
-                lock.unlock();
-            }
-
+        for (int i = 0; i < matrix.getMatrixSize(); i++) {
+           matrix.fillDiagonalCell(i, value);
         }
-        System.out.println(name + ":  index = " + index);
+        logger.debug(name + " finished work.");
     }
 }

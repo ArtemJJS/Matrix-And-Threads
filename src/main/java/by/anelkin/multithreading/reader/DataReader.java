@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class DataReader {
-    private String DEFAULT_PATH = "src/main/resources/data/default_input";
+    private static final String DEFAULT_PATH = "src/main/resources/data/thread";
 
     public List<String> read(String path) {
         if (path == null || !(new File(path).isFile())) {
