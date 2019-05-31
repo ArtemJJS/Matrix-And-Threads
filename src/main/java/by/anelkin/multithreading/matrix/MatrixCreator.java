@@ -1,10 +1,12 @@
 package by.anelkin.multithreading.matrix;
 
 import by.anelkin.multithreading.reader.DataReader;
+import by.anelkin.multithreading.validator.ThreadValidator;
 import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.concurrent.Phaser;
+import java.util.stream.Collectors;
 
 class MatrixCreator {
     private static final Logger logger = Logger.getLogger(MatrixCreator.class);
@@ -27,7 +29,9 @@ class MatrixCreator {
 
     Phaser initMatrixPhaser() {
         DataReader reader = new DataReader();
-        int threadCount = reader.read(THREAD_PATH).size();
+        ThreadValidator validator = new ThreadValidator();
+        int threadCount = reader.read(THREAD_PATH).stream()
+                .filter(validator::validate).collect(Collectors.toList()).size();
         if (threadCount == 0) {
             threadCount = DEFAULT_THREAD_COUNT;
             logger.warn(THREAD_PATH + " is empty! Phase setted to default: " + threadCount);
