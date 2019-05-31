@@ -1,22 +1,79 @@
-2019-05-31 15:02:38 pool-1-thread-1 DEBUG Matrix:35 - pool-1-thread-1 received matrix instance.
-2019-05-31 15:02:38 pool-1-thread-2 DEBUG Matrix:35 - pool-1-thread-2 received matrix instance.
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG Matrix:35 - pool-1-thread-4 received matrix instance.
-2019-05-31 15:02:38 pool-1-thread-1 DEBUG Matrix:45 - pool-1-thread-1 fill cell 2:2
-2019-05-31 15:02:38 pool-1-thread-3 DEBUG Matrix:45 - pool-1-thread-3 fill cell 0:0
-2019-05-31 15:02:38 pool-1-thread-5 DEBUG Matrix:45 - pool-1-thread-5 fill cell 1:1
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG Matrix:45 - pool-1-thread-4 fill cell 4:4
-2019-05-31 15:02:38 pool-1-thread-2 DEBUG Matrix:45 - pool-1-thread-2 fill cell 3:3
-2019-05-31 15:02:38 pool-1-thread-2 DEBUG Matrix:45 - pool-1-thread-2 fill cell 5:5
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG Matrix:45 - pool-1-thread-4 fill cell 6:6
-2019-05-31 15:02:38 pool-1-thread-3 DEBUG Matrix:45 - pool-1-thread-3 fill cell 9:9
-2019-05-31 15:02:38 pool-1-thread-5 DEBUG Matrix:45 - pool-1-thread-5 fill cell 7:7
-2019-05-31 15:02:38 pool-1-thread-1 DEBUG Matrix:45 - pool-1-thread-1 fill cell 8:8
-2019-05-31 15:02:38 pool-1-thread-1 DEBUG Matrix:45 - pool-1-thread-1 fill cell 10:10
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG Matrix:45 - pool-1-thread-4 fill cell 11:11
-2019-05-31 15:02:38 pool-1-thread-5 DEBUG MatrixThread:25 - Thread#5 finished work.
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG Matrix:50 - pool-1-thread-4 terminate phaser.
-2019-05-31 15:02:38 pool-1-thread-4 DEBUG MatrixThread:25 - Thread#4 finished work.
-2019-05-31 15:02:38 pool-1-thread-3 DEBUG MatrixThread:25 - Thread#3 finished work.
-2019-05-31 15:02:38 pool-1-thread-1 DEBUG MatrixThread:25 - Thread#1 finished work.
-2019-05-31 15:02:38 pool-1-thread-2 DEBUG MatrixThread:25 - Thread#2 finished work.
-2019-05-31 15:02:38 main            DEBUG Matrix:35 - main received matrix instance.
+2019-05-31 15:23:51 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:26:12 main            INFO  DataReader:16 - Start reading from data/matrix_size
+2019-05-31 15:26:12 main            WARN  DataReader:18 - Path data/matrix_size changed to default src/main/resources/data/thread
+2019-05-31 15:26:12 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:26:59 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:26:59 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:27:39 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:27:39 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:30:53 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:30:53 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:30:53 main            INFO  DataReader:16 - Start reading from 
+2019-05-31 15:30:53 main            WARN  DataReader:18 - Path  changed to default src/main/resources/data/thread
+2019-05-31 15:30:53 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:32:04 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:32:04 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:32:04 main            INFO  DataReader:16 - Start reading from 
+2019-05-31 15:32:04 main            WARN  DataReader:18 - Path  changed to default src/main/resources/data/thread
+2019-05-31 15:32:04 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:32:04 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:32:04 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:32:04 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:32:04 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:32:04 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:34:53 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:34:53 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:34:53 main            INFO  DataReader:16 - Start reading from src/main/resources/data/thread
+2019-05-31 15:34:53 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:34:53 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:34:53 main            INFO  Matrix:23 - Matrix created. Size: 12. Phaser counter: 5
+2019-05-31 15:34:53 main            INFO  Matrix:31 - Matrix instance created upon main request.
+2019-05-31 15:34:53 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:34:53 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:36:24 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:36:24 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:36:24 main            INFO  DataReader:16 - Start reading from src/main/resources/data/thread
+2019-05-31 15:36:24 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:36:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:36:24 main            INFO  Matrix:23 - Matrix created. Size: 12. Phaser counter: 5
+2019-05-31 15:36:24 main            INFO  Matrix:31 - Matrix instance created upon main request.
+2019-05-31 15:36:24 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:36:24 main            DEBUG Matrix:46 - main fill cell 4:4
+2019-05-31 15:40:24 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:40:24 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:40:24 main            INFO  DataReader:16 - Start reading from 
+2019-05-31 15:40:24 main            WARN  DataReader:18 - Path  changed to default src/main/resources/data/thread
+2019-05-31 15:40:24 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:40:24 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:40:24 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:40:24 main            INFO  DataReader:16 - Start reading from src/main/resources/data/thread
+2019-05-31 15:40:24 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:24 main            INFO  Matrix:23 - Matrix created. Size: 12. Phaser counter: 5
+2019-05-31 15:40:24 main            INFO  Matrix:31 - Matrix instance created upon main request.
+2019-05-31 15:40:24 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:40:24 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:24 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:40:29 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:40:29 main            INFO  DataReader:16 - Start reading from 
+2019-05-31 15:40:29 main            WARN  DataReader:18 - Path  changed to default src/main/resources/data/thread
+2019-05-31 15:40:29 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:40:29 main            INFO  DataReader:16 - Start reading from src/main/resources/data/matrix_size
+2019-05-31 15:40:29 main            INFO  DataReader:24 - Read 1 lines from src/main/resources/data/matrix_size
+2019-05-31 15:40:29 main            INFO  DataReader:16 - Start reading from src/main/resources/data/thread
+2019-05-31 15:40:29 main            INFO  DataReader:24 - Read 6 lines from src/main/resources/data/thread
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            INFO  Matrix:23 - Matrix created. Size: 12. Phaser counter: 5
+2019-05-31 15:40:29 main            INFO  Matrix:31 - Matrix instance created upon main request.
+2019-05-31 15:40:29 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:40:29 main            DEBUG Matrix:36 - main received matrix instance.
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.
+2019-05-31 15:40:29 main            DEBUG ThreadValidator:17 - Incorrect line detected.

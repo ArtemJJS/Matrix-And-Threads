@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 class MatrixCreator {
     private static final Logger logger = Logger.getLogger(MatrixCreator.class);
     private static final int DEFAULT_MATRIX_SIZE = 12;
-    private static final int DEFAULT_THREAD_COUNT = 4;
+    private static final int DEFAULT_THREAD_COUNT = 1;
     private static final String MATRIX_SIZE_PATH = "src/main/resources/data/matrix_size";
     private static final String THREAD_PATH = "src/main/resources/data/thread";
 

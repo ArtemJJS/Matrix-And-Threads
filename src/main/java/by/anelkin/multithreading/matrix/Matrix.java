@@ -2,6 +2,7 @@ package by.anelkin.multithreading.matrix;
 
 import org.apache.log4j.Logger;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.Phaser;
 import java.util.concurrent.locks.Lock;
@@ -97,5 +98,18 @@ public class Matrix {
             result.append("\n");
         }
         return result.toString().trim();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Matrix)) return false;
+        Matrix matrix = (Matrix) o;
+        return Arrays.equals(field, matrix.field);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(field);
     }
 }
