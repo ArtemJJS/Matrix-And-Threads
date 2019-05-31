@@ -18,7 +18,9 @@ public class MatrixThread extends Thread {
         logger.debug(name + " is starting.");
         Matrix matrix = Matrix.getInstance();
         for (int i = 0; i < matrix.getMatrixSize(); i++) {
-           matrix.fillDiagonalCell(i, value);
+          if (matrix.getCellValue(i,i) == 0) {
+              matrix.fillDiagonalCell(i, value);
+          }
         }
         logger.debug(name + " finished work.");
     }

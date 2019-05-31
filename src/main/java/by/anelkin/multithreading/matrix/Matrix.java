@@ -26,7 +26,7 @@ public class Matrix {
         lock.lock();
         try {
             if (instance == null) {
-                instance = new Matrix((new MatrixCreator()).initMatrix());
+                instance = new Matrix((new MatrixCreator()).initMatrixSize());
                 logger.info("Matrix instance created upon " + Thread.currentThread().getName() + " request.");
             }
         } finally {
@@ -37,25 +37,24 @@ public class Matrix {
     }
 
     public boolean fillDiagonalCell(int index, int value) {
-        boolean isUpdateDone = false;
         Cell currentCell = field[index][index];
-        if (currentCell.cellLock.tryLock() && currentCell.cellValue == 0) {
+        boolean isUpdated = false;
+        if (currentCell.cellLock.tryLock()) {
             try {
                 currentCell.cellValue = value;
-                isUpdateDone = true;
                 logger.debug(Thread.currentThread().getName() + " fill cell " + index + ":" + index);
-                // without phaser we always have output like:  1 2 3 4 5 1 1 1 1 1 1
                 if (index != field.length - 1) {
                     phaser.arriveAndAwaitAdvance();
                 } else {
                     phaser.forceTermination();
                     logger.debug(Thread.currentThread().getName() + " terminate phaser.");
                 }
+                isUpdated = true;
             } finally {
                 currentCell.cellLock.unlock();
             }
         }
-        return isUpdateDone;
+        return isUpdated;
     }
 
     public int getMatrixSize() {
@@ -83,12 +82,16 @@ public class Matrix {
         }
     }
 
+    public int getCellValue(int row, int column) {
+        return field[row][column].cellValue;
+    }
+
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length; j++) {
-                result.append(String.valueOf(field[i][j].cellValue));
+        for (Cell[] row : field) {
+            for (Cell cell : row) {
+                result.append(String.valueOf(cell.cellValue));
                 result.append("  ");
             }
             result.append("\n");
